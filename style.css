@@ -4,16 +4,18 @@ html, body{
     margin: 0;
     font-family: "Open Sans", sans-serif;
 }
+/*стили для preform*/
 #preform{
     height: 100%;
     width: 100%;
-    display: flex;
+    display: none;/*при переключении менять на flex*/
     flex-direction: column;
+    z-index: 10;
 }
 #top_panel{
     height: 5%;
     width: 100%;
-    display: flex;
+    display: flex; 
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid 2px rgb(184, 178, 178);
@@ -57,11 +59,14 @@ top: 20%;
 }
 #password{
     height: 4%;
+    width: 80%;
     font-size: large;
     border: none;
     border-bottom: solid 2px  rgb(109 157 56);
     padding-left: 3%;
     padding-right: 3%;
+    position: relative;
+    left: 7%;
 }
 #list{
     display: flex;
@@ -96,4 +101,85 @@ justify-content: center;
     font-size: large;
     color: antiquewhite;
 }
-
+/*стили для scan*/
+#scan{
+    height: 100%;
+    width: 100%;
+    display: flex;/*при переключении менять на flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 100;
+}
+#scan_block{
+    height: 92%;
+    width: 100%;
+}
+#scan_top_panel{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#scan_title{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
+#scan_img{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#scan_img>img{
+    width: 60%;
+}
+#frame{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#frame>img{
+    height: 90%;
+    width: 90%;
+    text-align: center;
+}
+#scan_btns{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#scan_btns>img{
+    height: 60%;
+    width: 80%;
+}
+#text1{
+    height: 3%;
+    text-align: center;
+}
+#text2{
+    height: 3%;
+    text-align: center;
+}
+#down_panel{
+    height: 8%;
+}
+#down_panel>img{
+    height: 100%;
+    width: 100%;
+}
+#ticket{
+    width: 100%;
+    display: none;/*при переключении менять на flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1000;
+}
