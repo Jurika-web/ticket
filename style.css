@@ -1,0 +1,99 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+#preform{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#top_panel{
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 2px rgb(184, 178, 178);
+}
+#cross, #users{
+    width: 15%;
+    height: 100%;
+}
+#panel_title{
+    font-size: large;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#pb_logo{
+    height: 60%;
+    display: flex;
+    display: flex;
+}
+#pb_logo>img{
+height: 45%;
+width: 100%;
+position: relative;
+top: 20%;
+}
+#comment{
+    font-size: large;
+    height: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#comment1{
+    font-size:small;
+    display: flex;
+    align-items: flex-end;
+    height: 4%;
+    padding-left: 3%;
+    color: rgb(109 157 56);
+}
+#password{
+    height: 4%;
+    font-size: large;
+    border: none;
+    border-bottom: solid 2px  rgb(109 157 56);
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    height: 5%;
+    justify-content: space-evenly;
+}
+#list>div{
+    display: flex;
+    align-items: center;
+}
+#comment2{
+    font-size:large;
+    display: flex;
+    align-items: center;
+    height: 10%;
+    padding-left: 3%;
+    color: rgb(109 157 56);
+}
+#preform_btn{
+height: 6%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#agree{
+    width: 94%;
+    height: 90%;
+    background-color:rgb(109 157 56) ;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    color: antiquewhite;
+}
+
