@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ticket</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <div id="preform">
@@ -44,7 +45,23 @@
         </div>
     </div>
     <div id="ticket">
-        
+        <div id="ticket_top_panel">
+            <div id="arrow"> <img src="./jpg/left.png" alt="arrow"></div>
+            <div id="ticket_title">Архів</div>
+        </div>
+        <div id="ticket_middle_panel"> <img src="./jpg/panel.png" alt="panel"></div>
+        <div id="ticket_main">
+            <div id="number">0000</div>
+            <div id="seria">000000000</div>
+            <div id="date">00.00.0000</div>
+            <div id="time">00:00:00</div>
+            <div id="transport">Тролейбус</div>
+            <img src="./jpg/trolley_ticket_body.png" alt="ticket_body">
+        </div>
+        <div class="archive"><img src="./jpg/archive_ticket.png" alt="archive_ticket"></div>
+        <div class="archive"><img src="./jpg/archive_ticket.png" alt="archive_ticket"></div>
+        <div class="archive"><img src="./jpg/archive_ticket.png" alt="archive_ticket"></div>
+        <button id="ticket_btn">Відсканувати QR-код</button>
     </div>
 </body>
 </html>
