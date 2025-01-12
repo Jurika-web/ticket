@@ -8,7 +8,7 @@ html, body{
 #preform{
     height: 100%;
     width: 100%;
-    display: none;/*при переключении менять на flex*/
+    display: flex;/*при переключении менять на flex*/
     flex-direction: column;
     z-index: 10;
 }
@@ -105,7 +105,7 @@ justify-content: center;
 #scan{
     height: 100%;
     width: 100%;
-    display: flex;/*при переключении менять на flex*/
+    display: none;/*при переключении менять на flex*/
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -175,6 +175,7 @@ justify-content: center;
     height: 100%;
     width: 100%;
 }
+/*стили для ticket*/
 #ticket{
     width: 100%;
     display: none;/*при переключении менять на flex*/
@@ -182,4 +183,111 @@ justify-content: center;
     align-items: center;
     justify-content: flex-start;
     z-index: 1000;
+}
+#ticket_top_panel{
+    height: 20vw;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#arrow{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#arrow>img{
+    height: 60%;
+    width: 60%;
+}
+#ticket_title{
+    font-size: 160%;
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+}
+#ticket_middle_panel{
+    height: 10vw;
+    width: 90%;
+}
+#ticket_middle_panel>img{
+    height: 100%;
+    width: 100%;
+}
+#ticket_main{
+    height: 130vw;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: relative;
+}
+#ticket_main>img{
+    height: 100%;
+    width: 100%;
+}
+.archive{
+    height: 130vw;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.archive>img{
+    height: 100%;
+    width: 100%;
+}
+#ticket_btn{
+    width: 90%;
+    height: 8vw;
+    background-color:rgb(109 157 56) ;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    color: antiquewhite;
+    position: fixed;
+    bottom: 0%;
+}
+#number{
+    z-index: 100;
+    position: absolute;
+    top: 76vw;
+    left: 48%;
+    font-size: 6vw;
+    color:#4f4f4f;
+}
+#seria{
+    z-index: 100;
+    position: absolute;
+    top: 24vw;
+    left: 38%;
+    font-size: 4vw;
+    font-weight: 900;
+    color:#4f4f4f;
+}
+#date{
+    z-index: 100;
+    position: absolute;
+    top: 99vw;
+    left: 10%;
+    font-size: 4vw;
+    color:#808080;
+}
+#time{
+    z-index: 100;
+    position: absolute;
+    top: 99vw;
+    left: 42%;
+    font-size: 4vw;
+    color:#808080;
+}
+#transport{
+    z-index: 100;
+    position: absolute;
+    top: 84vw;
+    left: 42%;
+    font-size: 4vw;
+    color:#aeaeae;
 }
