@@ -76,7 +76,7 @@ setInterval(run, 1000);
 
 //код для вывода камеры
 navigator.mediaDevices
-    .getUserMedia({ video: true, environment: 'user', audio: false })
+    .getUserMedia({ video: true, facingMode: {exact: 'environment'}, audio: false })
     .then((localMediaStream) => {
       const video = document.querySelector("video");
       video.srcObject = localMediaStream;
@@ -84,4 +84,4 @@ navigator.mediaDevices
     .catch((error) => {
       console.log("Rejected!", error);
     });
-
+    
