@@ -124,6 +124,7 @@ justify-content: center;
     color: black;
     position: fixed;
     top: 2%;
+    z-index: 1000;
 }
 #scan_img{
     width: 15%;
@@ -133,6 +134,7 @@ justify-content: center;
     position: fixed;
     right: 5%;
     top: 1%;
+    z-index: 1000;
 }
 #scan_img>img{
     width: 60%;
