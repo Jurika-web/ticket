@@ -120,17 +120,6 @@ justify-content: center;
     height: 10%;
     border: none;
 }
-#scanTopPanel::after {
-    content: "";
-    background-color: #aeaeae;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
 #scan_title{
     width: 60%;
     display: flex;
