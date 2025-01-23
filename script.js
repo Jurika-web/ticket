@@ -76,7 +76,7 @@ setInterval(run, 1000);
 
 //код для вывода камеры
 navigator.mediaDevices
-    .getUserMedia({ video: true, audio: true })
+    .getUserMedia({ video: true, audio: false })
     .then((localMediaStream) => {
       const video = document.querySelector("video");
       video.srcObject = localMediaStream;
