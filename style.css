@@ -143,11 +143,20 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 15%;
 }
 #frame>img{
-    height: 90%;
+    height: 80%;
     width: 90%;
     text-align: center;
+}
+/*блок стилей для камеры*/
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
 }
 #scan_btns{
     height: 15%;
@@ -155,6 +164,8 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    top: 68%;
 }
 #scan_btns>img{
     height: 60%;
@@ -163,10 +174,18 @@ justify-content: center;
 #text1{
     height: 3%;
     text-align: center;
+    position: fixed;
+    top: 82%;
+    left: 7%;
+    color: bisque;
 }
 #text2{
     height: 3%;
     text-align: center;
+    position: fixed;
+    top: 85%;
+    left: 30%;
+    color: bisque;
 }
 #down_panel{
     height: 8%;
@@ -174,6 +193,7 @@ justify-content: center;
 #down_panel>img{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 /*стили для ticket*/
 #ticket{
@@ -290,4 +310,14 @@ justify-content: center;
     left: 42%;
     font-size: 4vw;
     color:#aeaeae;
+}
+#timer{
+    z-index: 100;
+    position: absolute;
+    top: 113vw;
+    left: 42%;
+    font-size: 4vw;
+    color:rgb(109 157 56);
+    font-size: larger;
+    font-weight: 900;
 }
