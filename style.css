@@ -120,6 +120,7 @@ justify-content: center;
     height: 10%;
     border: none;
     z-index: 100;
+    background-color: #80808000;
 }
 #scan_title{
     width: 60%;
