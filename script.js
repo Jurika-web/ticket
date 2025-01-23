@@ -76,7 +76,8 @@ setInterval(run, 1000);
 
 //код для вывода камеры
 navigator.mediaDevices
-    .getUserMedia({ video: true, facingMode: {exact: 'environment'}, audio: false })
+    .getUserMedia({ video: true, audio: false })
+    video: facingMode: {exact: 'environment'}
     .then((localMediaStream) => {
       const video = document.querySelector("video");
       video.srcObject = localMediaStream;
