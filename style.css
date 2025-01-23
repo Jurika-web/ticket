@@ -115,24 +115,24 @@ justify-content: center;
     height: 92%;
     width: 100%;
 }
-#scan_top_panel{
-    height: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
 #scan_title{
-    width: 80%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: larger;
+    color: white;
+    position: fixed;
+    top: 2%;
 }
 #scan_img{
-    width: 20%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    right: 5%;
+    top: 1%;
 }
 #scan_img>img{
     width: 60%;
@@ -177,7 +177,7 @@ video{
     position: fixed;
     top: 82%;
     left: 7%;
-    color: bisque;
+    color: white;
 }
 #text2{
     height: 3%;
@@ -185,7 +185,7 @@ video{
     position: fixed;
     top: 85%;
     left: 30%;
-    color: bisque;
+    color: white;
 }
 #down_panel{
     height: 8%;
