@@ -47,8 +47,8 @@ downPanel.onclick = () => {
     timer.textContent = min + ':' + sec
 }
 password.addEventListener("keydown", (event) =>{
-   event.preventDefault()
-    number.textContent = password.value += event.key;
+    event.preventDefault()
+    number.textContent = Number(password.value += event.key);
 })
 trolleybus.onchange = () =>{
     transport.textContent = 'Тролейбус'
