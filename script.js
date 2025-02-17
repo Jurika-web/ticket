@@ -27,10 +27,6 @@ const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
 
-let currentDate ;
-let currentTime = `${hour}:${minute}:${second}`;
-
-
 //переключение с первого окна
 agree.onclick = () => {
     preform.style.display = 'none'; 
@@ -44,8 +40,12 @@ downPanel.onclick = () => {
     scan.style.display = 'none';
     ticket.style.display = 'flex';
     seria.textContent = Math.floor(500000000 + Math.random() * (999999999 + 1 - 500000000));
-    date.textContent = `${day}.${month}.${year}`;
-    time.textContent = currentTime;
+    if(month<10){
+        date.textContent = `${day}.${month}.${year}`;
+    }else if(month>=10){
+        date.textContent = `${day}.'0'${month}.${year}`;
+    }
+    time.textContent = `${hour}:${minute}:${second}`;
     timer.textContent = min + ':' + sec
 }
 password.addEventListener("keydown", (event) =>{
