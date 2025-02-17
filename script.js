@@ -26,7 +26,12 @@ const year = constrDate.getFullYear();
 const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
-let currentDate = `${day}.${month}.${year}`;
+function rightMonth(){
+    if (month <10){
+        let valueMonth = "0" + month;
+    }
+}
+let currentDate = `${day}.${valueMonth}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
 
 //переключение с первого окна
