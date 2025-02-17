@@ -27,15 +27,9 @@ const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
 
-let currentDate = `${day}.${month}.${year}`;
+let currentDate ;
 let currentTime = `${hour}:${minute}:${second}`;
 
-function fullMonth(){
-    if(month>10){
-        currentDate = `${day}.'0'${month}.${year}`
-    }
-}
-fullMonth()
 
 //переключение с первого окна
 agree.onclick = () => {
@@ -50,7 +44,7 @@ downPanel.onclick = () => {
     scan.style.display = 'none';
     ticket.style.display = 'flex';
     seria.textContent = Math.floor(500000000 + Math.random() * (999999999 + 1 - 500000000));
-    date.textContent = currentDate;
+    date.textContent = `${day}.${month}.${year}`;
     time.textContent = currentTime;
     timer.textContent = min + ':' + sec
 }
