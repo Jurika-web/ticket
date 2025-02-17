@@ -28,7 +28,7 @@ const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
 function rightMonth(){
     if (month <10){
-        let valueMonth = "0" + month;
+        let valueMonth = "0" + String(month);
     }
 }
 let currentDate = `${day}.${valueMonth}.${year}`;
