@@ -42,9 +42,29 @@ downPanel.onclick = () => {
     if (month<10){
         date.textContent = `${day}`+'.0' + `${month}.${year}`;
     }else{
+        date.textContent = `${day}.${month}.${year}`;
+    }
+     if (day<10){
+        date.textContent = '0' + `${day}.${month}.${year}`;
+    }else{
+        date.textContent = `${day}.${month}.${year}`;
+    }
+    if (hour<10){
+        time.textContent = '0' +`${hour}.${minute}.${second}`;
+    }else{
         time.textContent = `${hour}.${minute}.${second}`;
     }
-    
+    if (minute<10){
+        time.textContent = `${hour}` + '.0' + `${minute}.${second}`;
+    }else{
+        time.textContent = `${hour}.${minute}.${second}`;
+    }
+    if (second<10){
+        time.textContent = `${hour}.${minute}` + '.0' +`${second}`;
+    }else{
+        time.textContent = `${hour}.${minute}.${second}`;
+    }
+   
     
     timer.textContent = min + ':' + sec
 }
