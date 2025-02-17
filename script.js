@@ -21,12 +21,12 @@ let numberValue = '';
 
 let constrDate = new Date();
 const day = constrDate.getDate();
-const month = constrDate.getMonth();
+const month = constrDate.getMonth()+1;
 const year = constrDate.getFullYear();
 const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
-let currentDate = `${day}.${month+1}.${year}`;
+let currentDate = `${day}.${month}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
 
 //переключение с первого окна
