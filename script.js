@@ -17,7 +17,7 @@ let timer = document.getElementById('timer');
 let min = 59;
 let sec = 59;
 let numberValue = '';
-
+let valueMonth
 
 let constrDate = new Date();
 const day = constrDate.getDate();
@@ -28,10 +28,11 @@ const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
 function rightMonth(){
     if (month <10){
-        let valueMonth = "0" + String(month);
-    }
+        valueMonth = "0" + String(month);
+    }else if(month >=10){
+        valueMonth = month;
 }
-let currentDate = `${day}.${valueMonth}.${year}`;
+let currentDate = `${day}.${month}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
 
 //переключение с первого окна
