@@ -41,9 +41,9 @@ downPanel.onclick = () => {
     ticket.style.display = 'flex';
     seria.textContent = Math.floor(500000000 + Math.random() * (999999999 + 1 - 500000000));
     if(month<10){
-        date.textContent = `${day}.${month}.${year}`;
-    }else if(month>=10){
         date.textContent = `${day}.'0'${month}.${year}`;
+    }else if(month>=10){
+        date.textContent = `${day}.${month}.${year}`;
     }
     time.textContent = `${hour}:${minute}:${second}`;
     timer.textContent = min + ':' + sec
