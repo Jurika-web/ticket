@@ -29,10 +29,12 @@ const second = constrDate.getSeconds();
 let currentDate = `${day}.${month}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
 
+function rightMonth(){
 if(constrDate.getMonth()<10){
     month = '0' + constrDate.getMonth()+1
 }else if(constrDate.getMonth()>=10){
     month = constrDate.getMonth()+1
+}
 }
 
 //переключение с первого окна
@@ -44,6 +46,7 @@ agree.onclick = () => {
 //переключение со второго окна, установка серии, установка даты, установка времени, ввод счетчика времени
 //вывод вида транспорта
 downPanel.onclick = () => {
+    rightMonth()
     preform.style.display = 'none'; 
     scan.style.display = 'none';
     ticket.style.display = 'flex';
