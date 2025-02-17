@@ -26,16 +26,16 @@ const year = constrDate.getFullYear();
 const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
-function rightMonth(){
-    if (month <10){
-        valueMonth = "0" + String(month);
-    }else if(month >=10){
-        valueMonth = month;
-    }
-    return month
-}
-let currentDate = `${day}.${rightMonth()}.${year}`;
+
+let currentDate = `${day}.${month}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
+
+function fullMonth(){
+    if(month>10){
+        currentDate = `${day}.'0'${month}.${year}`
+    }
+}
+fullMonth()
 
 //переключение с первого окна
 agree.onclick = () => {
