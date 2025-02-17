@@ -31,8 +31,10 @@ function rightMonth(){
         valueMonth = "0" + String(month);
     }else if(month >=10){
         valueMonth = month;
+    }
+    return month
 }
-let currentDate = `${day}.${month}.${year}`;
+let currentDate = `${day}.${rightMonth()}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
 
 //переключение с первого окна
