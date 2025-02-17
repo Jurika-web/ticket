@@ -21,13 +21,19 @@ let numberValue = '';
 
 let constrDate = new Date();
 const day = constrDate.getDate();
-const month = constrDate.getMonth();
+let month = constrDate.getMonth();
 const year = constrDate.getFullYear();
 const hour = constrDate.getHours();
 const minute = constrDate.getMinutes();
 const second = constrDate.getSeconds();
 let currentDate = `${day}.${month}.${year}`;
 let currentTime = `${hour}:${minute}:${second}`;
+
+if(constrDate.getMonth()<10){
+    month = '0' + constrDate.getMonth()+1
+}else if(constrDate.getMonth()>=10){
+    month = constrDate.getMonth()+1
+}
 
 //переключение с первого окна
 agree.onclick = () => {
